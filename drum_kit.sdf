@@ -1,0 +1,259 @@
+<?xml version="1.0" ?>
+<sdf version="1.7">
+    <model name="drumkit">
+    <static>true</static>
+    <link name="snare">
+    <collision name="snare">
+        <pose>.1 .1 .4 0 .14 0</pose>
+        <geometry>
+            <cylinder>
+                <length>.18</length>
+                <radius>0.2</radius>
+            </cylinder>
+        </geometry>
+        <drake:proximity_properties>
+          <drake:point_contact_stiffness>
+            20000
+          </drake:point_contact_stiffness>
+          <drake:hunt_crossley_dissipation>
+            2
+          </drake:hunt_crossley_dissipation>
+        </drake:proximity_properties>
+    </collision>
+    <visual name="snare">
+        <pose>.1 .1 .4 0 .14 0</pose>
+        <geometry>
+            <cylinder>
+                <length>.18</length>
+                <radius>0.2</radius>
+            </cylinder>
+        </geometry>
+        <material>
+            <diffuse>1 0 0 1</diffuse>
+        </material>
+    </visual>
+    </link>
+    <link name="tom1">
+    <collision name="tom1">
+        <pose>-.2 .3 .6 0 .55 0</pose>
+        <geometry>
+            <cylinder>
+                <length>.1</length>
+                <radius>0.2</radius>
+            </cylinder>
+        </geometry>
+        <drake:proximity_properties>
+          <drake:point_contact_stiffness>
+            20000
+          </drake:point_contact_stiffness>
+          <drake:hunt_crossley_dissipation>
+            2
+          </drake:hunt_crossley_dissipation>
+        </drake:proximity_properties>
+    </collision>
+    <visual name="tom1">
+        <pose>-.2 .3 .6 0 .55 0</pose>
+        <geometry>
+            <cylinder>
+                <length>.15</length>
+                <radius>0.14</radius>
+            </cylinder>
+        </geometry>
+        <material>
+            <diffuse>1 0 0 1</diffuse>
+        </material>
+    </visual>
+    </link>
+
+    <link name="tom2">
+    <collision name="tom2">
+        <pose>-.2 .3 .6 0 .55 0</pose>
+        <geometry>
+            <cylinder>
+                <length>.1</length>
+                <radius>0.2</radius>
+            </cylinder>
+        </geometry>
+        <drake:proximity_properties>
+          <drake:point_contact_stiffness>
+            20000
+          </drake:point_contact_stiffness>
+          <drake:hunt_crossley_dissipation>
+            2
+          </drake:hunt_crossley_dissipation>
+        </drake:proximity_properties>
+    </collision>
+    <visual name="tom2">
+        <pose>-.2 .62 .6 0 .55 0</pose>
+        <geometry>
+            <cylinder>
+                <length>.15</length>
+                <radius>0.16</radius>
+            </cylinder>
+        </geometry>
+        <material>
+            <diffuse>1 0 0 1</diffuse>
+        </material>
+    </visual>
+    </link>
+
+    <link name="tom3">
+    <collision name="tom3">
+        <pose>.1 .9 .3 0 0 0</pose>
+        <geometry>
+            <cylinder>
+                <length>.4</length>
+                <radius>0.2</radius>
+            </cylinder>
+        </geometry>
+        <drake:proximity_properties>
+          <drake:point_contact_stiffness>
+            20000
+          </drake:point_contact_stiffness>
+          <drake:hunt_crossley_dissipation>
+           2
+          </drake:hunt_crossley_dissipation>
+        </drake:proximity_properties>
+    </collision>
+    <visual name="tom3">
+        <pose>.1 .9 .3 0 0 0</pose>
+        <geometry>
+            <cylinder>
+                <length>.4</length>
+                <radius>0.2</radius>
+            </cylinder>
+        </geometry>
+        <material>
+            <diffuse>1 0 0 1</diffuse>
+        </material>
+    </visual>
+    </link>
+
+    <link name="hihat">
+    <collision name="hihat">
+        <pose>-.1 -.1 .6 0 0 0</pose>
+        <geometry>
+            <ellipsoid>
+                <radii>.2 .2 .02</radii>
+            </ellipsoid>
+        </geometry>
+
+        <drake:proximity_properties>
+          <drake:point_contact_stiffness>
+            20000
+          </drake:point_contact_stiffness>
+          <drake:hunt_crossley_dissipation>
+            2
+          </drake:hunt_crossley_dissipation>
+        </drake:proximity_properties>
+    </collision>
+    <visual name="hihat">
+        <pose>.1 -.25 .6 0 0 0</pose>
+        <geometry>
+            <ellipsoid>
+                <radii>.2 .2 .02</radii>
+            </ellipsoid>
+        </geometry>
+        <material>
+            <diffuse>1 0 0 1</diffuse>
+        </material>
+    </visual>
+    </link>
+
+    <link name="crash">
+    <collision name="crash">
+         <pose>-.4 .1 .85 0 .3 0</pose>
+        <geometry>
+            <ellipsoid>
+                <radii>.26 .26 .005</radii>
+            </ellipsoid>
+        </geometry>
+
+        <drake:proximity_properties>
+          <drake:point_contact_stiffness>
+            20000
+          </drake:point_contact_stiffness>
+          <drake:hunt_crossley_dissipation>
+            2
+          </drake:hunt_crossley_dissipation>
+        </drake:proximity_properties>
+    </collision>
+    <visual name="crash">
+        <pose>-.4 .1 .85 0 .3 0</pose>
+        <geometry>
+            <ellipsoid>
+                <radii>.26 .26 .005</radii>
+            </ellipsoid>
+        </geometry>
+        <material>
+            <diffuse>1 0 0 1</diffuse>
+        </material>
+    </visual>
+    </link>
+
+    <link name="ride">
+    <collision name="ride">
+        <pose>-.25 1.1 .65 .3 .3 0</pose>
+        <geometry>
+            <ellipsoid>
+                <radii>.3 .3 .005</radii>
+            </ellipsoid>
+        </geometry>
+
+        <drake:proximity_properties>
+          <drake:point_contact_stiffness>
+            20000
+          </drake:point_contact_stiffness>
+          <drake:hunt_crossley_dissipation>
+            2
+          </drake:hunt_crossley_dissipation>
+        </drake:proximity_properties>
+    </collision>
+    <visual name="ride">
+        <pose>-.25 1.1 .65 .3 .3 0</pose>
+        <geometry>
+            <ellipsoid>
+                <radii>.3 .3 .005</radii>
+            </ellipsoid>
+        </geometry>
+        <material>
+            <diffuse>1 0 0 1</diffuse>
+        </material>
+    </visual>
+    </link>
+
+    <link name="kick">
+    <collision name="kick">
+        <pose>-.3 .47 .25 0 1.57 0</pose>
+        <geometry>
+            <cylinder>
+                <length>.4</length>
+                <radius>0.25</radius>
+            </cylinder>
+        </geometry>
+
+        <drake:proximity_properties>
+          <drake:point_contact_stiffness>
+            20000
+          </drake:point_contact_stiffness>
+          <drake:hunt_crossley_dissipation>
+            2
+          </drake:hunt_crossley_dissipation>
+        </drake:proximity_properties>
+    </collision>
+    <visual name="kick">
+        <pose>-.3 .47 .25 0 1.57 0</pose>
+        <geometry>
+            <cylinder>
+                <length>.4</length>
+                <radius>0.25</radius>
+            </cylinder>
+        </geometry>
+        <material>
+            <diffuse>1 0 0 1</diffuse>
+        </material>
+    </visual>
+    </link>
+
+    </model>
+</sdf>
