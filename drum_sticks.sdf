@@ -2,41 +2,60 @@
 <!-- This sdf file is based on schunk_wsg_50.sdf -->
 <sdf version="1.7">
   <model name="Schunk_Gripper">
-    <link name="body">
-      <pose>0 -0.049133 0 0 0 0</pose>
-      <inertial>
-        <mass>5</mass>
-        <inertia>
-          <ixx>0.162992</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>0.162992</iyy>
-          <iyz>0</iyz>
-          <izz>0.164814</izz>
-        </inertia>
-      </inertial>
-      <visual name="visual">
+     <link name="body">
+     <collision name="stick2">
+        <pose>0 0 0.2 0 0 0</pose>
         <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>package://drake_models/wsg_50_description/meshes/wsg_body.obj</uri>
-          </mesh>
+            <capsule>
+                <length>0.22</length>
+                <radius>0.01</radius>
+            </capsule>
+        </geometry>
+        <surface>
+            <bounce>
+                <restitution_coefficient>0.5</restitution_coefficient>
+            </bounce>
+            <contact>
+                <elastic_modulus>.48</elastic_modulus>
+            </contact>
+        </surface>
+        <drake:proximity_properties>
+          <drake:point_contact_stiffness>
+            20000
+          </drake:point_contact_stiffness>
+          <drake:hunt_crossley_dissipation>
+            2
+          </drake:hunt_crossley_dissipation>
+        </drake:proximity_properties>
+    </collision>
+    <visual name="stick2">
+        <pose>0 0 0.2 0 0 0</pose>
+        <geometry>
+            <capsule>
+                <length>0.22</length>
+                <radius>0.01</radius>
+            </capsule>
         </geometry>
         <material>
-          <diffuse>0.7 0.7 0.7 1</diffuse>
+            <diffuse>1 .84 0.6 1</diffuse>
         </material>
-      </visual>
-      <collision name="collision">
-        <geometry>
-          <box>
-            <size>0.146 0.0725 0.05</size>
-          </box>
-        </geometry>
-      </collision>
+    </visual>
+    <inertial>
+        <pose>0 0 0.2 0 0 0</pose>
+        <mass>5</mass>
+        <inertia>
+            <ixx>1/12 * 0.22**2 </ixx>
+            <iyy>1/12 * 0.22**2 </iyy>
+            <izz>1/2 * 0.01**2</izz>
+        </inertia>
+
+    </inertial>
     </link>
+
     <frame name="body_frame">
       <pose relative_to="body"/>
     </frame>
+    <!--
     <link name="stick1">
     <inertial>
         <pose>0.0 0.0 0 0 0 0</pose>
@@ -141,9 +160,9 @@
           </box>
         </geometry>
       </collision>
-    </link>
-    <link name="stick2">
-    <collision name="stick2">
+    </link> -->
+    <!-- <link name="stick2"> -->
+    <!-- <collision name="stick2">
         <pose>0 0 0.2 0 0 0</pose>
         <geometry>
             <capsule>
@@ -190,19 +209,19 @@
         </inertia>
 
     </inertial>
-    </link>
-    <joint name="left_finger_sliding_joint" type="fixed">
+    </link> -->
+    <!-- <joint name="left_finger_sliding_joint" type="fixed">
       <parent>body</parent>
       <child>left_finger</child>
     </joint>
     <joint name="right_finger_sliding_joint" type="fixed">
       <parent>body</parent>
       <child>right_finger</child>
-    </joint>
-        <joint name="test_stick" type="fixed">
+    </joint> -->
+        <!-- <joint name="test_stick" type="fixed">
       <parent>body</parent>
       <child>stick2</child>
-    </joint>
+    </joint> -->
     
   </model>
 </sdf>
