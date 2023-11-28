@@ -1,6 +1,6 @@
 midi_to_name= {
-    32: 'hihat_foot_splash',
-    33: 'hihat_foot_close',
+    32: 'hi_hat_foot_splash',
+    33: 'hi_hat_foot_close',
     34: 'snare_edge',
     35: 'kick1',
     36: 'kick2',
@@ -24,5 +24,29 @@ midi_to_name= {
     54: 'tambourine',
     56: 'cowbell',
     57: 'crash_right',
+}
 
+hit_mapping = {
+    "crash_right": "crash",
+    "crash_left": "crash",
+    "ride_bell": "ride",
+    "ride_out": "ride",
+    "ride_edge": "ride",
+    "hi_tom1": "hi_tom",
+    "hi_tom2": "hi_tom",
+    "mid_tom1": "mid_tom",
+    "mid_tom2": "mid_tom",
+    "low_tom1": "low_tom",
+    "low_tom2": "low_tom",
+    "hi_hat_open": "hi_hat",
+    "hi_hat_foot_close": "hi_hat",
+    "hi_hat_foot_close": "hi_hat",
+    "hi_hat_foot_close": "hi_hat",
+    "hi_hat_foot_splash": "hi_hat",
+    "hi_hat_closed": "hi_hat",
+    "snare_rimshot": "snare",
+    "hand_claps": "snare",
+    "snare_center": "snare",
+    "snare_sidestick": "snare",
+    "snare_edge": "snare",
 }
