@@ -42,7 +42,7 @@
     </visual>
     <inertial>
         <pose>0 0 0.2 0 0 0</pose>
-        <mass>5</mass>
+        <mass>0.5</mass>
         <inertia>
             <ixx>1/12 * 0.22**2 </ixx>
             <iyy>1/12 * 0.22**2 </iyy>
