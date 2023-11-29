@@ -3,7 +3,7 @@
 <sdf version="1.7">
   <model name="Schunk_Gripper">
     <link name="body">
-      <pose>0 -0.049133 0 0 0 0</pose>
+      <pose>0 0 0 0 0 0</pose>
       <inertial>
         <mass>5</mass>
         <inertia>
