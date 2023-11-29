@@ -4,7 +4,7 @@
     <static>true</static>
     <link name="snare">
     <collision name="snare">
-        <pose>1 .1 .4 0 .14 0</pose>
+        <pose>.1 .1 .4 0 .14 0</pose>
         <geometry>
             <cylinder>
                 <length>.18</length>
