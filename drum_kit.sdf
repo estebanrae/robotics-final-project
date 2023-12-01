@@ -29,7 +29,7 @@
             </cylinder>
         </geometry>
         <material>
-            <diffuse>1 0 0 1</diffuse>
+            <diffuse>.5 .2 0 1</diffuse>
         </material>
     </visual>
     </link>
@@ -61,7 +61,7 @@
             </cylinder>
         </geometry>
         <material>
-            <diffuse>1 0 0 1</diffuse>
+            <diffuse>.5 .2 0 1</diffuse>
         </material>
     </visual>
     </link>
@@ -93,7 +93,7 @@
             </cylinder>
         </geometry>
         <material>
-            <diffuse>1 0 0 1</diffuse>
+            <diffuse>.5 .2 0 1</diffuse>
         </material>
     </visual>
     </link>
@@ -125,7 +125,7 @@
             </cylinder>
         </geometry>
         <material>
-            <diffuse>1 0 0 1</diffuse>
+            <diffuse>.5 .2 0 1</diffuse>
         </material>
     </visual>
     </link>
@@ -155,7 +155,7 @@
             </ellipsoid>
         </geometry>
         <material>
-            <diffuse>1 0 0 1</diffuse>
+            <diffuse>.5 .2 0 1</diffuse>
         </material>
     </visual>
     </link>
@@ -186,7 +186,7 @@
             </ellipsoid>
         </geometry>
         <material>
-            <diffuse>1 0 0 1</diffuse>
+            <diffuse>.5 .2 0 1</diffuse>
         </material>
     </visual>
     </link>
@@ -217,7 +217,7 @@
             </ellipsoid>
         </geometry>
         <material>
-            <diffuse>1 0 0 1</diffuse>
+            <diffuse>.5 .2 0 1</diffuse>
         </material>
     </visual>
     </link>
@@ -250,7 +250,7 @@
             </cylinder>
         </geometry>
         <material>
-            <diffuse>1 0 0 1</diffuse>
+            <diffuse>.5 .2 0 1</diffuse>
         </material>
     </visual>
     </link>
