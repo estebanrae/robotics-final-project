@@ -17,8 +17,8 @@
           </drake:point_contact_stiffness>
           <drake:hunt_crossley_dissipation>
             2
-          </drake:hunt_crossley_dissipation>
-        </drake:proximity_properties>
+          </drake:hunt_crossley_dissipation> 
+            </drake:proximity_properties>
     </collision>
     <visual name="snare">
         <pose>.1 .1 .4 0 .14 0</pose>
@@ -48,7 +48,8 @@
           </drake:point_contact_stiffness>
           <drake:hunt_crossley_dissipation>
             2
-          </drake:hunt_crossley_dissipation>
+            </drake:hunt_crossley_dissipation>
+
         </drake:proximity_properties>
     </collision>
     <visual name="hi_tom">
@@ -131,13 +132,12 @@
 
     <link name="hi_hat">
     <collision name="hi_hat">
-        <pose>-.1 -.1 .6 0 0 0</pose>
+        <pose>-.1 -.25 .6 0 0 0</pose>
         <geometry>
             <ellipsoid>
                 <radii>.2 .2 .02</radii>
             </ellipsoid>
         </geometry>
-
         <drake:proximity_properties>
           <drake:point_contact_stiffness>
             20000

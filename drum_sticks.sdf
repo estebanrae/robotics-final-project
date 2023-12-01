@@ -4,7 +4,7 @@
   <model name="drum_stick">
      <link name="stick">
      <collision name="stick">
-        <pose>0 0 0.2 0 0 0</pose>
+        <pose>0 0 0.1 0 0 0</pose>
         <geometry>
             <capsule>
                 <length>0.22</length>
@@ -13,15 +13,15 @@
         </geometry>
         <surface>
             <bounce>
-                <restitution_coefficient>0.5</restitution_coefficient>
+                <restitution_coefficient>0.9</restitution_coefficient>
             </bounce>
             <contact>
-                <elastic_modulus>.48</elastic_modulus>
+                <elastic_modulus>1</elastic_modulus>
             </contact>
         </surface>
         <drake:proximity_properties>
           <drake:point_contact_stiffness>
-            20000
+            200000
           </drake:point_contact_stiffness>
           <drake:hunt_crossley_dissipation>
             2
@@ -29,7 +29,7 @@
         </drake:proximity_properties>
     </collision>
     <visual name="stick">
-        <pose>0 0 0.2 0 0 0</pose>
+        <pose>0 0 0.1 0 0 0</pose>
         <geometry>
             <capsule>
                 <length>0.22</length>
@@ -41,12 +41,12 @@
         </material>
     </visual>
     <inertial>
-        <pose>0 0 0.2 0 0 0</pose>
+        <pose>0 0 0 0 0 0</pose>
         <mass>0.5</mass>
         <inertia>
-            <ixx>1/12 * 0.22**2 </ixx>
-            <iyy>1/12 * 0.22**2 </iyy>
-            <izz>1/2 * 0.01**2</izz>
+            <ixx> 0.001 </ixx>
+            <iyy> 0.001 </iyy>
+            <izz> 0.001</izz>
         </inertia>
 
     </inertial>
