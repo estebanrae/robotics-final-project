@@ -1,0 +1,104 @@
+<?xml version="1.0" ?>
+<sdf version="1.7">
+    <model name="drumkit">
+    <static>true</static>
+
+    <link name="mid_tom">
+    <collision name="mid_tom">
+        <pose>-.2 1.12 .6 0 .55 0</pose>
+        <geometry>
+            <cylinder>
+                <length>.15</length>
+                <radius>0.16</radius>
+            </cylinder>
+        </geometry>
+        <drake:proximity_properties>
+          <drake:point_contact_stiffness>
+            20000
+          </drake:point_contact_stiffness>
+          <drake:hunt_crossley_dissipation>
+            2
+          </drake:hunt_crossley_dissipation>
+        </drake:proximity_properties>
+    </collision>
+    <visual name="mid_tom">
+        <pose>-.2 1.12 .6 0 .55 0</pose>
+        <geometry>
+            <cylinder>
+                <length>.15</length>
+                <radius>0.16</radius>
+            </cylinder>
+        </geometry>
+        <material>
+            <diffuse>.5 .2 0 1</diffuse>
+        </material>
+    </visual>
+    </link>
+
+    <link name="low_tom">
+    <collision name="low_tom">
+        <pose>.1 1.4 .35 0 0 0</pose>
+        <geometry>
+            <cylinder>
+                <length>.4</length>
+                <radius>0.2</radius>
+            </cylinder>
+        </geometry>
+        <drake:proximity_properties>
+          <drake:point_contact_stiffness>
+            20000
+          </drake:point_contact_stiffness>
+          <drake:hunt_crossley_dissipation>
+            2
+          </drake:hunt_crossley_dissipation>
+        </drake:proximity_properties>
+    </collision>
+    <visual name="low_tom">
+        <pose>.1 1.4 .35 0 0 0</pose>
+        <geometry>
+            <cylinder>
+                <length>.4</length>
+                <radius>0.2</radius>
+            </cylinder>
+        </geometry>
+        <material>
+            <diffuse>.5 .2 0 1</diffuse>
+        </material>
+    </visual>
+    </link>
+
+
+
+    <link name="ride">
+    <collision name="ride">
+        <pose>-.40 1.6 .75 .3 .3 0</pose>
+        <geometry>
+            <ellipsoid>
+                <radii>.3 .3 .005</radii>
+            </ellipsoid>
+        </geometry>
+
+        <drake:proximity_properties>
+          <drake:point_contact_stiffness>
+            20000
+          </drake:point_contact_stiffness>
+          <drake:hunt_crossley_dissipation>
+            2
+          </drake:hunt_crossley_dissipation>
+        </drake:proximity_properties>
+    </collision>
+    <visual name="ride">
+        <pose>-.40 1.6 .75 .3 .3 0</pose>
+        <geometry>
+            <ellipsoid>
+                <radii>.3 .3 .005</radii>
+            </ellipsoid>
+        </geometry>
+        <material>
+            <diffuse>.5 .2 0 1</diffuse>
+        </material>
+    </visual>
+    </link>
+
+    </model>
+    </sdf>
