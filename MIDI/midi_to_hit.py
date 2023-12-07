@@ -1,6 +1,7 @@
 import numpy as np
-from midi_to_name import midi_to_name, hit_mapping
+from MIDI.midi_to_name import midi_to_name, hit_mapping
 from mido import MidiFile, MetaMessage, tick2second, bpm2tempo
+
 def midi_to_hit(filename = 'MIDI/midi_drums.mid'):
 
     mid = MidiFile(filename)
@@ -18,7 +19,6 @@ def midi_to_hit(filename = 'MIDI/midi_drums.mid'):
 
         total_time += tick2second(msg.time, ticks_per_beat, tempo)
         last_hit_time += tick2second(msg.time, ticks_per_beat, tempo)
-        print(total_time)
         if msg.type == 'note_on' and msg.note in midi_to_name.keys():
             hit = midi_to_name[msg.note]
             if hit in hit_mapping.keys():

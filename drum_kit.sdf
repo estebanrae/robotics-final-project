@@ -38,8 +38,8 @@
         <pose>-.2 .3 .6 0 .55 0</pose>
         <geometry>
             <cylinder>
-                <length>.1</length>
-                <radius>0.2</radius>
+                <length>.15</length>
+                <radius>0.14</radius>
             </cylinder>
         </geometry>
         <drake:proximity_properties>
@@ -68,11 +68,11 @@
 
     <link name="mid_tom">
     <collision name="mid_tom">
-        <pose>-.2 .3 .6 0 .55 0</pose>
+        <pose>-.2 1.12 .6 0 .55 0</pose>
         <geometry>
             <cylinder>
-                <length>.1</length>
-                <radius>0.2</radius>
+                <length>.15</length>
+                <radius>0.16</radius>
             </cylinder>
         </geometry>
         <drake:proximity_properties>
@@ -85,7 +85,7 @@
         </drake:proximity_properties>
     </collision>
     <visual name="mid_tom">
-        <pose>-.2 .62 .6 0 .55 0</pose>
+        <pose>-.2 1.12 .6 0 .55 0</pose>
         <geometry>
             <cylinder>
                 <length>.15</length>
@@ -100,7 +100,7 @@
 
     <link name="low_tom">
     <collision name="low_tom">
-        <pose>.1 .9 .3 0 0 0</pose>
+        <pose>.1 1.4 .35 0 0 0</pose>
         <geometry>
             <cylinder>
                 <length>.4</length>
@@ -117,7 +117,7 @@
         </drake:proximity_properties>
     </collision>
     <visual name="low_tom">
-        <pose>.1 .9 .3 0 0 0</pose>
+        <pose>.1 1.4 .35 0 0 0</pose>
         <geometry>
             <cylinder>
                 <length>.4</length>
@@ -132,7 +132,7 @@
 
     <link name="hi_hat">
     <collision name="hi_hat">
-        <pose>-.1 -.25 .6 0 0 0</pose>
+        <pose>.1 -.25 .6 0 0 0</pose>
         <geometry>
             <ellipsoid>
                 <radii>.2 .2 .02</radii>
@@ -193,7 +193,7 @@
 
     <link name="ride">
     <collision name="ride">
-        <pose>-.25 1.1 .65 .3 .3 0</pose>
+        <pose>-.40 1.6 .75 .3 .3 0</pose>
         <geometry>
             <ellipsoid>
                 <radii>.3 .3 .005</radii>
@@ -210,7 +210,7 @@
         </drake:proximity_properties>
     </collision>
     <visual name="ride">
-        <pose>-.25 1.1 .65 .3 .3 0</pose>
+        <pose>-.40 1.6 .75 .3 .3 0</pose>
         <geometry>
             <ellipsoid>
                 <radii>.3 .3 .005</radii>
