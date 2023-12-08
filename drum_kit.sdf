@@ -38,8 +38,8 @@
         <pose>-.2 .3 .6 0 .55 0</pose>
         <geometry>
             <cylinder>
-                <length>.15</length>
-                <radius>0.14</radius>
+                <length>.1</length>
+                <radius>0.2</radius>
             </cylinder>
         </geometry>
         <drake:proximity_properties>
@@ -49,7 +49,6 @@
           <drake:hunt_crossley_dissipation>
             2
             </drake:hunt_crossley_dissipation>
-
         </drake:proximity_properties>
     </collision>
     <visual name="hi_tom">
@@ -68,11 +67,11 @@
 
     <link name="mid_tom">
     <collision name="mid_tom">
-        <pose>-.2 1.12 .6 0 .55 0</pose>
+        <pose>-.2 .3 .6 0 .55 0</pose>
         <geometry>
             <cylinder>
-                <length>.15</length>
-                <radius>0.16</radius>
+                <length>.1</length>
+                <radius>0.2</radius>
             </cylinder>
         </geometry>
         <drake:proximity_properties>
@@ -85,7 +84,7 @@
         </drake:proximity_properties>
     </collision>
     <visual name="mid_tom">
-        <pose>-.2 1.12 .6 0 .55 0</pose>
+        <pose>-.2 .62 .6 0 .55 0</pose>
         <geometry>
             <cylinder>
                 <length>.15</length>
@@ -100,7 +99,7 @@
 
     <link name="low_tom">
     <collision name="low_tom">
-        <pose>.1 1.4 .35 0 0 0</pose>
+        <pose>.1 .9 .3 0 0 0</pose>
         <geometry>
             <cylinder>
                 <length>.4</length>
@@ -117,7 +116,7 @@
         </drake:proximity_properties>
     </collision>
     <visual name="low_tom">
-        <pose>.1 1.4 .35 0 0 0</pose>
+        <pose>.1 .9 .3 0 0 0</pose>
         <geometry>
             <cylinder>
                 <length>.4</length>
@@ -132,7 +131,7 @@
 
     <link name="hi_hat">
     <collision name="hi_hat">
-        <pose>.1 -.25 .6 0 0 0</pose>
+        <pose>-.1 -.25 .6 0 0 0</pose>
         <geometry>
             <ellipsoid>
                 <radii>.2 .2 .02</radii>
@@ -159,7 +158,6 @@
         </material>
     </visual>
     </link>
-
     <link name="crash">
     <collision name="crash">
          <pose>-.4 .1 .85 0 .3 0</pose>
@@ -168,7 +166,6 @@
                 <radii>.26 .26 .005</radii>
             </ellipsoid>
         </geometry>
-
         <drake:proximity_properties>
           <drake:point_contact_stiffness>
             20000
@@ -193,13 +190,12 @@
 
     <link name="ride">
     <collision name="ride">
-        <pose>-.40 1.6 .75 .3 .3 0</pose>
+        <pose>-.25 1.1 .65 .3 .3 0</pose>
         <geometry>
             <ellipsoid>
                 <radii>.3 .3 .005</radii>
             </ellipsoid>
         </geometry>
-
         <drake:proximity_properties>
           <drake:point_contact_stiffness>
             20000
@@ -210,7 +206,7 @@
         </drake:proximity_properties>
     </collision>
     <visual name="ride">
-        <pose>-.40 1.6 .75 .3 .3 0</pose>
+        <pose>-.25 1.1 .65 .3 .3 0</pose>
         <geometry>
             <ellipsoid>
                 <radii>.3 .3 .005</radii>
@@ -221,7 +217,6 @@
         </material>
     </visual>
     </link>
-
     <link name="kick">
     <collision name="kick">
         <pose>-.3 .47 .25 0 1.57 0</pose>
@@ -231,7 +226,6 @@
                 <radius>0.25</radius>
             </cylinder>
         </geometry>
-
         <drake:proximity_properties>
           <drake:point_contact_stiffness>
             20000
@@ -254,6 +248,5 @@
         </material>
     </visual>
     </link>
-
     </model>
     </sdf>
