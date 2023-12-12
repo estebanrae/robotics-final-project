@@ -68,7 +68,7 @@
 
     <link name="mid_tom">
     <collision name="mid_tom">
-        <pose>-.2 1.12 .6 0 .55 0</pose>
+        <pose>-.2 0.65 .6 0 .55 0</pose>
         <geometry>
             <cylinder>
                 <length>.15</length>
@@ -85,7 +85,7 @@
         </drake:proximity_properties>
     </collision>
     <visual name="mid_tom">
-        <pose>-.2 1.12 .6 0 .55 0</pose>
+        <pose>-.2 0.65 .6 0 .55 0</pose>
         <geometry>
             <cylinder>
                 <length>.15</length>
@@ -100,7 +100,7 @@
 
     <link name="low_tom">
     <collision name="low_tom">
-        <pose>.1 1.4 .35 0 0 0</pose>
+        <pose>.1 0.9 .35 0 0 0</pose>
         <geometry>
             <cylinder>
                 <length>.4</length>
@@ -117,7 +117,7 @@
         </drake:proximity_properties>
     </collision>
     <visual name="low_tom">
-        <pose>.1 1.4 .35 0 0 0</pose>
+        <pose>.1 0.9 .35 0 0 0</pose>
         <geometry>
             <cylinder>
                 <length>.4</length>
@@ -193,7 +193,7 @@
 
     <link name="ride">
     <collision name="ride">
-        <pose>-.40 1.6 .75 .3 .3 0</pose>
+        <pose>-.40 1.1 .75 .3 .3 0</pose>
         <geometry>
             <ellipsoid>
                 <radii>.3 .3 .005</radii>
@@ -210,7 +210,7 @@
         </drake:proximity_properties>
     </collision>
     <visual name="ride">
-        <pose>-.40 1.6 .75 .3 .3 0</pose>
+        <pose>-.40 1.1 .75 .3 .3 0</pose>
         <geometry>
             <ellipsoid>
                 <radii>.3 .3 .005</radii>
